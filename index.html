@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Smooth Website</title>
+<style>
+  /* Reset & base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    transition: background 0.5s ease;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease forwards;
+  }
+  p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.5s;
+  }
+  a.button {
+    margin-top: 2rem;
+    background: #fff;
+    color: #000dff;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 13, 255, 0.4);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  a.button:hover {
+    background: #000dff;
+    color: white;
+    box-shadow: 0 8px 20px rgba(107, 115, 255, 0.7);
+  }
+
+  /* Animations */
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px);}
+    100% { opacity: 1; transform: translateY(0);}
+  }
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
+  }
+</style>
+</head>
+<body>
+  <h1>Welcome to My HTML5 Website.</h1>
+  <a href="#" class="button">Get Started</a>
+</body>
+</html>
